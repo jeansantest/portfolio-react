@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaMoon, FaSun } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 import { useTheme } from '../Context/ThemeContext';
-import './Style/Navbar.scss';
+import './Style/Navbar.css';
 
 function Navbar() {
   const { theme, setTheme } = useTheme();

@@ -2,7 +2,7 @@ import React from 'react';
 import { FaHeart } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 import { useTheme } from '../Context/ThemeContext';
-import './Style/Header.scss';
+import './Style/Header.css';
 
 function Header() {
   const { theme } = useTheme();

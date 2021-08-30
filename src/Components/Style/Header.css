@@ -1,0 +1,91 @@
+.light .header {
+  height: 100vh;
+  background: linear-gradient(-45deg, #001858, #8195d5, #8bd3dd, #f582ae);
+  animation: gradient 13s ease infinite;
+  background-size: 400% 400%;
+  color: #fef6e4;
+  transition: all 0.5s;
+}
+.light .header h1 {
+  font-weight: 100;
+  font-size: 5em;
+}
+.light .header h2 {
+  font-weight: 600;
+  font-size: 2em;
+}
+.light .wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+.dark .header {
+  height: 100vh;
+  background: linear-gradient(-45deg, #2cb67d, #37a778, #0e8050, #7f5af0);
+  animation: gradient 13s ease infinite;
+  background-size: 400% 400%;
+  color: #fef6e4;
+  transition: all 0.5s;
+}
+.dark .header h1 {
+  font-weight: 100;
+  font-size: 5em;
+}
+.dark .header h2 {
+  font-weight: 600;
+  font-size: 2em;
+}
+.dark .header .wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.center {
+  align-items: center;
+  justify-content: center;
+}

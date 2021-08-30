@@ -15,13 +15,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "build": "npm-run-all build:css build:html",
-    "build:css": "node-sass src/site/_includes/css/main.scss > src/site/css/main.css",
-    "build:html": "eleventy",
-    "watch": "npm-run-all --parallel watch:css watch:html",
-    "watch:css": "node-sass --watch src/site/_includes/css/main.scss > src/site/css/main.css",
-    "watch:html": "eleventy --serve --port=8181",
-    "start": "npm run watch"
+    "build": "eleventy",
+    "start": "netlify dev"
   },
   "eslintConfig": {
     "extends": [

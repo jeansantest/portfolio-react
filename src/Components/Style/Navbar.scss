@@ -1,0 +1,139 @@
+.row {
+  display: flex;
+}
+
+.light {
+  .nav-bar {
+    width: 100%;
+    background: #fef6e4;
+    z-index: 1;
+    position: fixed;
+    justify-content: space-around;
+    padding: 10px;
+    transition: all 0.5s;
+
+    h1 {
+      animation-duration: 2.5s;
+      color: #001858;
+      align-self: center;
+      text-decoration: none;
+    }
+
+    a {
+      padding-left: 20px;
+      text-decoration: none;
+      color: #001858;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    a:hover {
+      filter: brightness(200%);
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    img {
+      border: 1px solid #001858;
+      width: 27px;
+      border-radius: 100%;
+      margin-right: 10px;
+    }
+
+    .bar {
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 10px;
+    }
+
+    .border-image {
+      box-shadow: 0px 0px 0px 2px #031548;
+      transition: box-shadow 0.6s linear;
+      margin: 0.5em;
+    }
+
+    .border-image:hover {
+      box-shadow: 0px 0px 0px 3px #021138;
+    }
+  }
+}
+
+.dark {
+  .nav-bar {
+    width: 100%;
+    background: #16161a;
+    z-index: 1;
+    position: fixed;
+    justify-content: space-around;
+    padding: 10px;
+    transition: all 0.5s;
+
+    h1 {
+      animation-duration: 2.5s;
+      color: #fffffe;
+      align-self: center;
+      text-decoration: none;
+    }
+
+    a {
+      padding-left: 20px;
+      text-decoration: none;
+      color: #fffffe;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    a:hover {
+      filter: brightness(200%);
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    img {
+      border: 1px solid #fffffe;
+      width: 27px;
+      border-radius: 100%;
+      margin-right: 10px;
+    }
+
+    .bar {
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 10px;
+    }
+
+    .border-image {
+      box-shadow: 0px 0px 0px 2px #f7f7f5;
+      transition: box-shadow 0.6s linear;
+      margin: 0.5em;
+    }
+
+    .border-image:hover {
+      box-shadow: 0px 0px 0px 3px #e7e8eb;
+    }
+  }
+}
+
+@keyframes move-text-color {
+  0% {
+    bottom: -0.2em;
+    opacity: 1;
+    color: #001858;
+  }
+
+  50% {
+    bottom: 0.2em;
+    color: #8195d5;
+  }
+
+  75% {
+    bottom: 0.1em;
+    color: #8bd3dd;
+  }
+
+  100% {
+    bottom: 0;
+    opacity: 1;
+    color: #f582ae;
+  }
+}
